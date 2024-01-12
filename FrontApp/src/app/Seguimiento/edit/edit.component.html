@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="card">
+     <div class="card-header">
+          <h3>Buscar</h3>
+     </div>
+     <div class="card-body">
+      <label for="nombreCliente">Identificación:</label>
+      <input type="text" id="id" [(ngModel)]="id" />
+      <button (click)="buscar()">Buscar</button>
+      <div *ngIf="dataFactura">
+    
+          <div class="form-group">
+              <label for="">Id:</label>
+              <input type="text" readonly="true"  name ="id" class="form-control" [(ngModel)]="dataFactura.id" required>
+           </div> 
+
+           <div class="form-group">
+            <label for="">numeroFactura:</label>
+            <input type="text" id="numeroFactura" name ="numeroFactura" class="form-control" [(ngModel)]=dataFactura.numeroFactura required>
+           </div>
+
+           <div class="form-group">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" [(ngModel)]="fecha">
+          </div>
+          
+           <div class="form-group">
+            <label for="">Marca:</label>
+            <select  id="tipodePago" name ="tipodePago" class="form-control" [(ngModel)]="dataFactura.tipodePago" required>
+              <option>
+                Contado
+                 </option>
+                 <option>
+                Credito
+                 </option>
+             </select>
+           </div>
+
+           <div class="form-group">
+            <label for="">documentoCliente:</label>
+            <input type="text" id="documentoCliente" name ="documentoCliente" class="form-control" [(ngModel)]=dataFactura.documentoCliente required>
+        </div> 
+
+
+           <div class="form-group">
+            <label for="">nombreCliente:</label>
+            <input type="text" id="nombreCliente" name ="nombreCliente" class="form-control" [(ngModel)]=dataFactura.nombreCliente required>
+        </div> 
+
+            
+          
+        <div class="form-group">
+          <label for="">Descuento:</label>
+          <input type="text" id="descuento" name ="descuento" class="form-control" [(ngModel)]=dataFactura.descuento required>
+         </div>
+
+         <div class="form-group">
+          <label for="">iva:</label>
+          <input type="text" id="iva" name ="iva" class="form-control" [(ngModel)]=dataFactura.iva required>
+         </div>
+
+  
+      <button (click)="editar()" class="btn btn-info" style="margin:10px;">Editar</button>
+      <button (click)="calcular()" class="btn btn-info" style="margin:10px;">Calcular</button>
+    </div> 
+  </div>     
+  </div>
+  </div>
+
