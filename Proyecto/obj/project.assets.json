@@ -3396,11 +3396,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Personal\\source\\repos\\Proyecto\\Proyecto.csproj",
+      "projectUniqueName": "C:\\pruebasGlobalTec\\PruebasGlobalTek\\Proyecto\\Proyecto.csproj",
       "projectName": "Proyecto",
-      "projectPath": "C:\\Users\\Personal\\source\\repos\\Proyecto\\Proyecto.csproj",
+      "projectPath": "C:\\pruebasGlobalTec\\PruebasGlobalTek\\Proyecto\\Proyecto.csproj",
       "packagesPath": "C:\\Users\\Personal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Personal\\source\\repos\\Proyecto\\obj\\",
+      "outputPath": "C:\\pruebasGlobalTec\\PruebasGlobalTek\\Proyecto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Personal\\AppData\\Roaming\\NuGet\\NuGet.Config",

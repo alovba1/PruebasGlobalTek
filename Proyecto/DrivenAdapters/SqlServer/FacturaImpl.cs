@@ -34,9 +34,9 @@ namespace Proyecto.DrivenAdapters.SqlServer
                             NombreCliente = dr["NombreCliente"].ToString(),
                             TipodePago = dr["TipodePago"].ToString(),
                             DocumentoCliente = dr["DocumentoCliente"].ToString(),
-                            Descuento = Convert.ToInt32(dr["Descuento"]),
-                            Iva = Convert.ToInt32(dr["Iva"]),
-                            Total = Convert.ToInt32(dr["Total"]),
+                            Descuento = Convert.ToDecimal(dr["Descuento"]),
+                            Iva = Convert.ToDecimal(dr["Iva"]),
+                            Total = Convert.ToDecimal(dr["Total"]),
                          
 
                         }
@@ -68,8 +68,8 @@ namespace Proyecto.DrivenAdapters.SqlServer
                         varFactura.TipodePago = dr["TipodePago"].ToString();
                         varFactura.DocumentoCliente = dr["DocumentoCliente"].ToString();
                         varFactura.NombreCliente = dr["NombreCliente"].ToString();
-                        varFactura.Descuento = Convert.ToInt32(dr["Descuento"].ToString());
-                        varFactura.Iva = Convert.ToInt32(dr["Iva"].ToString());
+                        varFactura.Descuento = Convert.ToDecimal(dr["Descuento"].ToString());
+                        varFactura.Iva = Convert.ToDecimal(dr["Iva"].ToString());
                     }
 
                 }

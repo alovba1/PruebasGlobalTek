@@ -55,7 +55,7 @@ namespace Proyecto.Domain.UseCase
         {
             bool rpta;
 
-            rpta = facturaImpl.UpDate(factura);
+            rpta = facturaImpl.UpDateCalcular(factura);
 
             return rpta;
         }
